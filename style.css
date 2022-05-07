@@ -1,0 +1,352 @@
+body{
+    font-family: 'poppins',sans-serif;
+}
+.navbar.nav-link{
+    font-size: 14px ;
+    text-transform: uppercase;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.navbar-toggle{
+    outline: none;
+}
+.bg-dark{
+    background: rgb(20, 55, 130);
+}/*slider*/
+.carousel-item{
+    height: 600px;
+
+}
+.carousel-image{
+
+    background: linear-gradient(rgb(0,0,3),rgb(0,0,4),
+    url('/images/logo.jpeg'));
+    background-size: cover;
+}
+.carousel-image{
+
+    background: linear-gradient(rgb(0,0,3),rgb(0,0,4),
+    url('/images/csh.jpeg'));
+    background-size: cover;
+}
+   
+.carousel-image{
+
+    background: linear-gradient(rgb(0,0,3),rgb(0,0,4),
+    url('/images/clippers.jpeg'));
+    background-size: cover;
+}
+.tittle-color{
+    color: white;
+
+}
+.btn-color{
+    background: black;
+    color: white;
+}
+.btn-color:hover{
+    color: white;
+}
+@keyframes slide-btn {
+    16.65%{
+        transform : translateY(8px);
+    } 
+    33%{
+        transform: translateY(-6px);
+    } 
+    50%{
+        transform: translateY(4px);
+    
+    }
+    65%{
+        transform: translateY(-2px);
+    }
+    85%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.slide-btn{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0,0,3);
+}
+
+.slide-btn:hover,
+.slide-btn:focus,
+.slide-btn:active{
+    animation-name:slide-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+/*service*/
+.service.card-img-top{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+image{
+     border-radius: 50%;
+    opacity: 1;
+    padding: 5px;
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+
+/** end ofservice*/
+/*work*/
+/* end of work*/
+/*product*/
+#Products{
+    background: black;
+    background-color: black;
+    color: black;
+    border-radius: 5px;
+
+}
+.Product-items{
+    background-color: black;
+}
+.card single-item{
+    background-color: black;
+}
+.image-container{
+    background-color: black;
+}
+.card body{
+    background-color: black;
+}
+.product-tittle{
+    color: white;
+}
+.single-item{
+    display: inline-block;
+    background-color: black;
+    vertical-align: middle;
+    transform: perspective(1px) translate(0);
+    position: relative;
+    transition-duration:0.3s ;
+    transition-property: transform;
+    cursor: pointer;
+}
+.single-item:before{
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 10%;
+    left: 5%;
+    height: 10px;
+    width:90% ;
+    opacity: 0;
+    background: radial-gradient(ellipse at center,rgb(248,248,248,0.35)
+    0%, rgba(247,244,244,0) 80%);
+    transition-duration: 0,3s;
+    transition-property: transform,opacity;
+
+}
+.single-item:hover,
+.single-item:focus,
+.single-item:active{
+    transform: translateY(-5px);
+}
+.single-item:hover:before,
+.single-item:focus:before,
+.single-item:active:before{
+    opacity: 1;
+    transform: translateY(5px);
+}
+.image.container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image.container:hover,
+.product-image:focus,
+.product-image:active{
+    box-shadow: 1px 0px 1px 4px rgba(247,243,243,0,9);
+    transform: scale(1.1);
+}
+/*section about*/
+#About-sec{
+    margin-top: 25px;
+    background-color: blue;
+
+}
+.text.color{
+    color: black;
+}
+.logo-image{
+    margin-top: 35px;
+}
+.logo-image{
+    animation-name:imageLeft;
+    animation-duration: 5s;
+
+}
+.About-text{
+    animation-name: text-right;
+    animation-duration: 5s;
+}
+@keyframes imageLeft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes text-right{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*end of  products*/
+
+@keyframes slide-btn {
+    16.65%{
+        transform : translateY(8px);
+    } 
+    33%{
+        transform: translateY(-6px);
+    } 
+    50%{
+        transform: translateY(4px);
+    
+    }
+    65%{
+        transform: translateY(-2px);
+    }
+    85%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.slide-btn{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0,0,3);
+}
+
+.slide-btn:hover,
+.slide-btn:focus,
+.slide-btn:active{
+    animation-name:slide-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+/*FOOTE*/
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  
